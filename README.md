@@ -29,11 +29,11 @@ config.testing.xml
 ```
 
 # More examples
-´´´bash
+```bash
 reemplazar *.txt --- cumbia --- for punk
-´´´
+```
 
-´´´bash
+```bash
 reemplazar *.txt --- river --- for riber
-´´´
+```
 
