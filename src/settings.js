@@ -7,6 +7,14 @@ class Settings {
         this.textToReplace = [];
         this.newText = [];
     }
+
+    getTextToReplace() {
+        return this.textToReplace.join(" ");
+    }
+
+    getNewText() {
+        return this.newText.join(" ");
+    }
 }
 
 module.exports = Settings;

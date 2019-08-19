@@ -22,8 +22,8 @@ const Processor = {
             let content = fs.readFileSync(f, "utf-8");
 
             do {
-                content = content.replace(settings.textToReplace, settings.newText);
-            } while (settings.all && content.indexOf(settings.textToReplace) > 0);
+                content = content.replace(settings.getTextToReplace(), settings.getNewText());
+            } while (settings.all && content.indexOf(settings.getTextToReplace()) > 0);
 
             let destination;
 
