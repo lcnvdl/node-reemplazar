@@ -1,8 +1,12 @@
 {
   "name": "reemplazar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Reemplazar is a simple tool that replaces strings in your files.",
+  "preferGlobal": true,
   "main": "index.js",
+  "bin": {
+    "reemplazar": "./index.js"
+  },
   "dependencies": {
     "colog": "^1.0.4",
     "glob-fs": "^0.1.7"
