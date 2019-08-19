@@ -1,0 +1,28 @@
+{
+  "name": "reemplazar",
+  "version": "0.0.1",
+  "description": "Reemplazar is a simple tool that replaces strings in your files.",
+  "main": "index.js",
+  "dependencies": {
+    "colog": "^1.0.4",
+    "glob-fs": "^0.1.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcnvdl/node-reemplazar.git"
+  },
+  "keywords": [
+    "replace",
+    "reemplazar"
+  ],
+  "author": "lcnvdl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lcnvdl/node-reemplazar/issues"
+  },
+  "homepage": "https://github.com/lcnvdl/node-reemplazar#readme"
+}
