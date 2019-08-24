@@ -22,6 +22,7 @@ function parseArgs(p) {
         }
         else if (i === 0) {
             settings.file = a;
+            settings.output = a;
         }
         else if (a === "--output" || a === "-o") {
             settings.output = args[++i];

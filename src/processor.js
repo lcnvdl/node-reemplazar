@@ -5,7 +5,10 @@ const colog = require("colog");
 
 const Processor = {
     process(settings) {
-        const files = (settings.file.indexOf("*") !== -1 || settings.file.indexOf("/") !== -1) ? glob.readdirSync(settings.file) : [settings.file];
+        const isPattern = settings.file.indexOf("*") !== -1;
+        const isDirectory = fs.lstatSync(settings.file).isDirectory();
+
+        const files = (isPattern || isDirectory) ? glob.readdirSync(settings.file) : [settings.file];
         let outputIsDir = false;
 
         if (settings.output) {
